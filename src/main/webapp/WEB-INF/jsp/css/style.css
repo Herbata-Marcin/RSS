@@ -1,0 +1,68 @@
+body {
+	margin: 10vh auto;
+	text-align: center;
+}
+
+#mainContainer {
+	font-size: 1.1em;
+	width: 80vw;
+	margin: 15vh auto;
+}
+
+#mainContainer>div {
+	width: 100%;
+}
+
+#mainContainer div:first-child div {
+	width: 50%;
+	margin-bottom: 5vh;
+	display: inline-block;
+}
+
+#mainContainer div:first-child div input {
+	font-size: 1em;
+	width: 75%;
+}
+
+#mainContainer div:nth-child(2) div {
+	height: 50vh;
+	overflow: auto;
+	border: #000 1px solid;
+	padding: 5px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+#mailView img {
+	max-width: 90%;
+}
+
+#mailView {
+	width: 55%;
+}
+
+#rssList {
+	width: 40%;
+	text-align: left;
+}
+
+#rssList a {
+	text-decoration: none;
+}
+
+button {
+	background-color: #333;
+	border: none;
+	color: white;
+	padding: 10px 50px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 1.6em;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #654;
+}

@@ -1,23 +1,30 @@
 <%@ include file="header.jsp"%>
 
-
-<div style="width:100%">
-		<input name="name" type="text" value="URL-RSS" style="display:inline-block; width: 25%;" /> 
-		<input name="mail" type="text" value="mail adress" style="display:inline-block; width: 25%;" /> 
-
+<div id="mainContainer">
+	<div>
+		<div>
+			<label for="url">Podaj URL:</label>
+			<input id="url" type="text" name="url">
+		</div>
+	  	<div>
+	  		<label for="mail">Podaj Mail:</label>
+			<input id="mail" type="text" name="mail" value="${mail}">
+		</div>
 	</div>
-	<div> 
-		<input name="mail_text" type="text" value="mail" style="display:inline-block; width: 25%; height: 100px; overflow: hidden;" src="http://" width="80" height="80" scrolling="no"/>
-		<input name="rss" type="text" value="RSS" style="display:inline-block; width: 25%; height: 100px; overflow: hidden;" src="http://" width="80" height="80" scrolling="no"/> 
+	<div>
+		<div id="mailView"></div>
+		<div id="rssList">
+			<c:forEach var="rss" items="${rssList}">
+				<a href="" onclick="removeRSS(${rss.id});">[x]</a>&nbsp;${rss.url}<br>
+			</c:forEach>
+		</div>
 	</div>
-	<div style="width:100%">
-	<form>
-	 
-	<button type="save" value="Submit">Save</button>
-   
-	<button type="send" value="Submit">Send</button>
-	</form>
-	</div>
+	<button id="save">save</button>
+	<button id="send">send</button>
+</div>
 
+<script>
+	<%@ include file="js/script.js"%>
+</script>
 
 <%@ include file="footer.jsp"%>
