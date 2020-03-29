@@ -1,2 +1,1 @@
-# webapp
-java | spring | hibernate | postgresql
+# rss
