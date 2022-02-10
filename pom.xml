@@ -10,7 +10,7 @@
 
 	<properties>
 		<springVersion>5.2.4.RELEASE</springVersion>
-		<hibernateVersion>5.4.12.Final</hibernateVersion>
+		<hibernateVersion>5.4.24.Final</hibernateVersion>
 		<postgresVersion>42.2.10</postgresVersion>
 		<jUnitVersion>4.13</jUnitVersion>
 	</properties>
